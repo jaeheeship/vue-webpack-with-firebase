@@ -1,9 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import firebase from 'firebase'
-import IfcNewVerttle from './../interfaces/IfcNewVerttle' 
-import IfcVerttle from './../interfaces/IfcVerttle'
-import IfcLink from './../interfaces/IfcLink'
 
 Vue.use(Vuex) ;
 
