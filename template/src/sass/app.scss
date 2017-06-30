@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css); 
+
+$primary :  #607D8B ;
+$radius-small: 3px !default ;
+$radius: 3px !default ;
+$radius-large: 7px !default ;
+
+
+@import "../../node_modules/bulma/sass/utilities/_all" ; 
+@import "../../node_modules/bulma/sass/base/_all" ;
+@import "../../node_modules/bulma/sass/elements/_all" ;
+
+@import "../../node_modules/bulma/sass/components/_all" ;
+@import "../../node_modules/bulma/sass/grid/_all" ;
+@import "../../node_modules/bulma/sass/layout/_all" ; 
+@import './layout.scss' ; 
+@import './common.scss' ; 
+@import '../../node_modules/animate.css/animate.min.css' ;
+
+
+.letter { 
+    padding:60px; 
+    max-width: 500px;
+    margin: 0 auto; 
+    background-color: rgba(255,255,255,.7);
+
+    @media screen and (max-width: $tablet ) {
+
+        img {
+            max-width: 50%;
+        }
+        padding:30px 0px; 
+
+    }
+    
+}
+
+.label {
+    font-weight:400;
+    font-size:14px; 
+}
+
+p {
+    font-family:  'Noto Sans KR', sans-serif; 
+    font-weight:300;
+
+    @media screen and (max-width: $tablet ) {
+        font-size:1.0rem; 
+    } 
+}
+
+strong {
+    font-weight:500;
+}
+
+.social {
+    margin-top: 25px;
+    a {
+        color:#000;
+    }
+}

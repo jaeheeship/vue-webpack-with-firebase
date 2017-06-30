@@ -1,53 +1,52 @@
 <template>
-  <div class="hello">
-    <h1>\{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://gitter.im/vuejs/vue" target="_blank">Gitter Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-      <br>
-      <li><a href="http://vuejs-templates.github.io/webpack/" target="_blank">Docs for This Template</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
-  </div>
+  <section class="hero is-bold is-fullheight bg">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <div class="letter">
+          <h1 class="title">
+            <img src="./../assets/logo@1.5x.png" />
+          </h1> 
+          <p>
+            빈칸은 아티스트의 작품을 <br/> 
+            리미티드 에디션 형태로 제작하여 <br/> 
+            작품의 가치를 선물합니다.<br/><br/> 
+            공간을 새롭게 만들고 싶다면,<br/> 
+            순간을 특별하게 그리고 싶다면,<br/>            
+            오래 기억될 선물을 주고 싶다면,<br/>
+            <br/>
+            <strong>빈칸이 당신의 삶에 특별함을 채워 드립니다.</strong><br/>
+          </p>
+        </div>
+        <!-- .letter -->
+        <div class="social">
+          <router-link to="/signup">signup</router-link>
+          <a href="https://www.instagram.com/vinkanlab/" target="_blank">
+            <span class="icon"> <i class="fa fa-instagram"></i> </span> 
+            인스타그램 바로가기
+           </a>
+        </div>
+      </div>
+    </div>
+  </section> 
 </template>
 
-<script>
-export default {
-  name: 'hello',
-  data{{#unless_eq lintConfig "airbnb"}} {{/unless_eq}}() {
-    return {
-      msg: 'Welcome to Your Vue.js App'{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
-    }{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-  }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
-}{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+<script lang="ts">
+import Hello from './Hello.ts'
+export default Hello
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h1, h2 {
-  font-weight: normal;
+
+<style lang="scss" scoped> 
+.letter {
+
+  @media screen and (min-width: 770px) {
+    img {
+      max-width: 210px;
+    }
+  }
+
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
 
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
 </style>

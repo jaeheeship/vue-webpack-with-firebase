@@ -1,0 +1,307 @@
+html {
+    background:#f2f2f2 !important;
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+  opacity: 0
+}
+
+nav.top-nav {
+    box-shadow: none;
+    border-bottom:1px solid #ddd;
+    .nav-item {
+        font-size:0.8rem;
+    }
+}
+
+.header {
+    padding : 10px 0px 0px ;
+    background-image: linear-gradient(141deg, #f5f5f5 0%, whitesmoke 71%, white 100%);
+    
+    box-shadow : 2px 4px 8px #c5c5c5;
+
+    h1 {
+        font-size:2.0rem;
+        font-family:lato;
+        font-weight:200;
+        padding:30px 10px;
+    }
+
+    .floating-btn { 
+        position:absolute;
+        bottom:-25px;
+        right:0;
+        
+        border-radius:50%; 
+        background-color: #3F51B5;
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14) , 0 1px 5px 0 rgba(0,0,0,0.12) , 0 3px 1px -2px rgba(0,0,0,0.2) ;
+        overflow:hidden;
+        cursor:pointer;
+        vertical-align:middle ;
+        color:#fff; 
+        padding:0 ;
+        text-decoration: none;
+        text-align:center;
+        z-index:1;
+        display:inline-block;
+        width:50px;
+        height:50px;
+
+        i {
+            line-height:50px;
+        }
+    }
+}
+
+.nav-center.align-left {
+    justify-content: left;
+}
+
+.common-container {
+    width: 650px;
+    position:relative;
+    margin:0 auto ; 
+}
+.pull-left {
+    float:left ;
+}
+
+.pull-right {
+    float:right; 
+}
+.input, .textarea {
+    box-shadow : none ;
+} 
+
+.divider {
+    display:table;
+    white-space:nowrap;
+    height:auto; 
+    line-height:1;
+    text-align:center;
+    font-size:1rem;
+
+    margin: 1rem 0 ;
+    font-weight:bold;
+    text-transform:uppercase ;
+    letter-spacing : .05em;
+    color:rgba(0,0,0,.85) ;
+    user-select:none;
+
+    &:after, &:before {
+        background-image: url('./../assets/1px.png') ;
+        background-position: right 1em top 50%;
+        content: '';
+        display: table-cell;
+        position: relative;
+        top: 50%;
+        width: 50%;
+        background-repeat: no-repeat;
+    } 
+
+    &:after {
+        background-position: left 1em top 50%;
+
+    }
+
+}
+
+.control.has-icons-left,.control.has-icons-right {
+
+  .icon {
+    color: #dbdbdb;
+    height: 2.25em;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 2.25em;
+    z-index: 4;
+
+    &.is-right {
+        right: 0; 
+    }
+
+    &.is-left { 
+        left: 0;
+    }
+  } 
+}
+
+
+// 정리필요함
+
+.form-wrapper { 
+    max-width: 500px;
+    margin: 0 auto;
+
+    .form-wrapper-header {
+        text-align:center;
+        img {
+            max-width:200px;
+        }
+
+        margin-top:30px;
+        margin-bottom:60px;
+
+    }
+
+    .form-wrapper-footer { 
+        text-align:right;
+    }
+}
+
+.form {
+    h1 {
+        font-size:1.5rem;
+        text-align:left;
+        font-weight:500 ;
+        margin-bottom:40px; 
+
+        small {
+            display:block;
+            font-size:1rem;
+            font-weight:200;
+        }
+    }
+    border-radius:2px;
+    margin-bottom:15px;
+
+}
+
+.form-footer {
+
+    margin-top:10px; 
+
+}
+
+.divider {
+    margin-bottom:30px;
+    margin-top:30px;
+}
+
+
+.social-buttons {
+    display:flex;
+    .button { 
+        font-size : 1rem;
+        display:block;
+        width:50%;
+        margin-bottom:10px;
+        
+        color:#fff ;
+
+        &.facebook {
+            background-color:#3a589a ;
+            margin-right:5px;
+            font-weight:100;
+        }
+
+        &.google {
+            background-color:#e04a33 ; 
+            margin-left:5px;
+            font-weight:100;
+        }
+
+        @media screen and (max-width:960px) {
+            font-size:0.9rem;
+        }
+    }
+
+    margin-bottom:20px;
+}
+
+.sidebar {
+    flex:none;
+    width: 450px ;
+    background: url("./../assets/bgline.png") repeat-y;
+    background-size:contain ; 
+    background-position:bottom;
+
+    @media screen and (max-width: 960px) {
+        display:none;
+    }
+}
+
+.login-area {
+    position:absolute;
+    top:30px;
+    right:30px;
+}
+
+
+.letter {
+    width:80%;
+    background:transparent;
+    border: 1px solid #000;
+    font-size:0.9rem;
+    padding:30px;
+
+    .header img {
+        width:150px;
+        margin-bottom:30px;
+    }
+    
+}
+
+.leftbar { 
+    padding-top:50px;
+    background: url("./../assets/signupbg.jpeg") no-repeat;
+    background-size:contain ; 
+    background-position:bottom;
+}
+
+.right-column {
+    display:flex; 
+    align-items:center;
+    flex-direction:column ; 
+    justify-content:center;
+
+    @media screen and (max-width:960px) {
+        min-height:100vh;
+    }
+}
+
+
+.is-fullheight {
+    min-height:100vh;
+}
+
+#password-message {
+    margin-top:10px;
+    font-size:11pt;
+
+    .material-icons {
+        font-size:inherit;
+    } 
+} 
+
+.paper-wrapper {
+    max-width:650px;
+    margin: 40px auto;
+    .paper {
+        clear:both;
+        background:#fff ;
+        border:1px solid #ddd;
+        margin: 10px auto;
+        width:100%;
+
+        &.borderless {
+            border:0px;
+        }
+
+        &.bg-transparent {
+            background:transparent ;
+        }
+
+        .header {
+            padding:10px; 
+        } 
+    }
+} 
+
+.media + .media { 
+    margin-top:0px ;
+    padding-top:0px ; 
+}
