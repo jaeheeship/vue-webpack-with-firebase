@@ -25,15 +25,6 @@ export default new Router({
       path: '/password-reset' ,
       name: 'password-reset',
       component : PasswordReset 
-    }, {
-      path : '/verttles',
-      name: 'verttles' ,
-      component : VerttleList
-    }, {
-      path : '/verttles/:id',
-      name: 'verttle_detail' ,
-      props : true,
-      component : VerttlePaper
     } 
   ]
 }) 

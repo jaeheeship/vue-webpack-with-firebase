@@ -2,11 +2,9 @@
 div.columns.is-gapless.is-multiline.is-mobile 
     div.column.right-column
         div.form-wrapper
-            div.form-wrapper-header
-                img(src="./../assets/logo@1.5x.png")
+            div.form-wrapper-header hello
             form.form
-                h1 안녕하세요.
-                    small 빈칸에서 아티스트의 작품을 소장하세요. 
+                h1 Hello
                 div.social-buttons
                     button.button.facebook sign in with
                         strong &nbsp;facebook 
@@ -38,10 +36,6 @@ div.columns.is-gapless.is-multiline.is-mobile
                             |&nbsp;&nbsp;Sign in&nbsp;&nbsp;
             div.form-wrapper-footer
                 router-link(to="signup") 아직 회원이 아니시면 지금 <strong>회원가입</strong> 하세요. 
-
-
-
-
 </template>
 
 <script lang="ts">
@@ -136,7 +130,6 @@ export default Signin
 .sidebar {
     flex:none;
     width: 450px ;
-    background: url("./../assets/bgline.png") repeat-y;
     background-size:contain ; 
     background-position:bottom;
 
@@ -168,7 +161,6 @@ export default Signin
 
 .leftbar { 
     padding-top:50px;
-    background: url("./../assets/signupbg.jpeg") no-repeat;
     background-size:contain ; 
     background-position:bottom;
 }

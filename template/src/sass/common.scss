@@ -91,7 +91,6 @@ nav.top-nav {
     user-select:none;
 
     &:after, &:before {
-        background-image: url('./../assets/1px.png') ;
         background-position: right 1em top 50%;
         content: '';
         display: table-cell;
@@ -215,7 +214,6 @@ nav.top-nav {
 .sidebar {
     flex:none;
     width: 450px ;
-    background: url("./../assets/bgline.png") repeat-y;
     background-size:contain ; 
     background-position:bottom;
 
@@ -247,7 +245,6 @@ nav.top-nav {
 
 .leftbar { 
     padding-top:50px;
-    background: url("./../assets/signupbg.jpeg") no-repeat;
     background-size:contain ; 
     background-position:bottom;
 }

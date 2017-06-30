@@ -60,7 +60,6 @@ export default Signup
 .sidebar {
     flex:none;
     width: 450px ;
-    background: url("./../assets/bgline.png") repeat-y;
     background-size:contain ; 
     background-position:bottom;
 
@@ -92,7 +91,6 @@ export default Signup
 
 .leftbar { 
     padding-top:50px;
-    background: url("./../assets/signupbg.jpeg") no-repeat;
     background-size:contain ; 
     background-position:bottom;
 }

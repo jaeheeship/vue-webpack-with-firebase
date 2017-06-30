@@ -1,8 +1,7 @@
-<template lang="jade">
+<template lang="pug">
 
 div.form-wrapper 
-    div.form-wrapper-header
-        img(src="./../../assets/logo@1.5x.png") 
+    div.form-wrapper-header Password Reset
     form.form
         h1 패스워드를 초기화하세요.
         div.field

@@ -4,10 +4,7 @@ import firebase from 'firebase';
 Vue.use(Vuex);
 export default new Vuex.Store({
     state: {
-        verttles: [],
-        currentVerttle: {},
         currentUser: {},
-        links: []
     },
     getters: {
         currentUser: function (state) {
@@ -19,18 +16,7 @@ export default new Vuex.Store({
             }
         }
     },
-    mutations: {
-        addLink: function () {
-        },
-        showVerttle: function (state, verttle) {
-            state.currentVerttle = verttle;
-        },
-        getLinks: function (state, payload) {
-            state.links = payload.links;
-        },
-        updateVerttles: function (state, verttles) {
-            state.verttles = verttles;
-        },
+    mutations: { 
         signin: function (state, user) {
             state.currentUser = user;
         }
